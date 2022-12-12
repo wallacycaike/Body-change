@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Change</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <script src="src/js/index.js" type="module" defer></script>
+    <script src="./node_modules/cleave.js/dist/cleave.min.js"></script>
+  </head>
+  <body>
+    <section class="utilities">
+      <div class="stopwatch">
+        <span class="stopwatch-title">Cronômetro</span>
+        <p class="time">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span
+            id="seconds"
+            >00</span
+          >
+        </p>
+        <div class="stopwatch-buttons">
+          <button class="startBtn">Iniciar</button>
+          <button class="pauseBtn disabled">Pausar</button>
+          <button class="stopBtn disabled">Parar</button>
+        </div>
+      </div>
+      <div class="timer">
+        <div class="timer-inputs">
+          <label for="timer-input">Temporizador:</label>
+          <input
+            type="text"
+            id="timer-input"
+            class="timer-input"
+            placeholder="hh:mm:ss"
+          />
+        </div>
+        <span class="timer-time">00:00:00</span>
+        <div class="timer-buttons">
+          <button class="startBtn">Iniciar</button>
+          <button class="pauseBtn disabled">Pausar</button>
+          <button class="stopBtn disabled">Parar</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

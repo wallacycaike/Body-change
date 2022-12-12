@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(6, 6, 6);
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.utilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.stopwatch {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid green;
+}
+.stopwatch .stopwatch-title {
+  font-size: 2.5rem;
+}
+.stopwatch p {
+  font-size: 7rem;
+  color: #fff;
+}
+.stopwatch .stopwatch-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.stopwatch .stopwatch-buttons button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  border-radius: 5px;
+  background: none;
+  padding: 5px 10px;
+  transition: ease-in-out 0.25s;
+}
+.stopwatch .stopwatch-buttons button.disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+.stopwatch .stopwatch-buttons .startBtn {
+  border: 1px solid rgb(0, 128, 0);
+  color: rgb(0, 128, 0);
+}
+.stopwatch .stopwatch-buttons .startBtn:hover {
+  background-color: rgb(0, 128, 0);
+  color: rgb(6, 6, 6);
+}
+.stopwatch .stopwatch-buttons .pauseBtn {
+  border: 1px solid rgb(255, 255, 0);
+  color: rgb(255, 255, 0);
+}
+.stopwatch .stopwatch-buttons .pauseBtn:hover {
+  background-color: rgb(255, 255, 0);
+  color: rgb(6, 6, 6);
+}
+.stopwatch .stopwatch-buttons .stopBtn {
+  border: 1px solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+}
+.stopwatch .stopwatch-buttons .stopBtn:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(6, 6, 6);
+}
+
+.timer {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.timer .timer-inputs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.timer .timer-inputs label {
+  font-size: 2.5rem;
+}
+.timer .timer-inputs input {
+  font-size: 2.5rem;
+  max-width: 180px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  padding: 5px 0px 5px 15px;
+}
+.timer .timer-time {
+  font-size: 7rem;
+}
+.timer .timer-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.timer .timer-buttons button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  border-radius: 5px;
+  background: none;
+  padding: 5px 10px;
+  transition: ease-in-out 0.25s;
+}
+.timer .timer-buttons button.disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+.timer .timer-buttons .startBtn {
+  border: 1px solid rgb(0, 128, 0);
+  color: rgb(0, 128, 0);
+}
+.timer .timer-buttons .startBtn:hover {
+  background-color: rgb(0, 128, 0);
+  color: rgb(6, 6, 6);
+}
+.timer .timer-buttons .pauseBtn {
+  border: 1px solid rgb(255, 255, 0);
+  color: rgb(255, 255, 0);
+}
+.timer .timer-buttons .pauseBtn:hover {
+  background-color: rgb(255, 255, 0);
+  color: rgb(6, 6, 6);
+}
+.timer .timer-buttons .stopBtn {
+  border: 1px solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+}
+.timer .timer-buttons .stopBtn:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(6, 6, 6);
+}
+
+/*# sourceMappingURL=styles.css.map */

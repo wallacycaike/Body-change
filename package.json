@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/wallacycaike/Body-change/issues"
   },
-  "homepage": "https://github.com/wallacycaike/Body-change#readme",
-  "dependencies": {
-    "cleave.js": "^1.6.0"
-  }
+  "homepage": "https://github.com/wallacycaike/Body-change#readme"
 }

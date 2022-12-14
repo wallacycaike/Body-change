@@ -7,17 +7,15 @@
     <title>Body Change</title>
     <link rel="stylesheet" href="./src/css/styles.css" />
     <script src="src/js/index.js" type="module" defer></script>
-    <script src="./node_modules/cleave.js/dist/cleave.min.js"></script>
   </head>
   <body>
     <section class="utilities">
       <div class="stopwatch">
         <span class="stopwatch-title">Cronômetro</span>
         <p class="time">
-          <span id="hours">00</span>:<span id="minutes">00</span>:<span
-            id="seconds"
+          <span id="stopwatchHours">00</span>:<span id="stopwatchMinutes"
             >00</span
-          >
+          >:<span id="stopwatchSeconds">00</span>
         </p>
         <div class="stopwatch-buttons">
           <button class="startBtn">Iniciar</button>
@@ -26,16 +24,28 @@
         </div>
       </div>
       <div class="timer">
+        <span class="timer-title">Temporizador</span>
         <div class="timer-inputs">
-          <label for="timer-input">Temporizador:</label>
-          <input
-            type="text"
-            id="timer-input"
-            class="timer-input"
-            placeholder="hh:mm:ss"
-          />
+          <div class="column">
+            <select>
+              <option value="00" selected hidden>00</option>
+            </select>
+          </div>
+          <div class="column">
+            <select>
+              <option value="00" selected hidden>00</option>
+            </select>
+          </div>
+          <div class="column">
+            <select>
+              <option value="00" selected hidden>00</option>
+            </select>
+          </div>
         </div>
-        <span class="timer-time">00:00:00</span>
+        <p class="timer-time">
+          <span id="timerHours">00</span>:<span id="timerMinutes">00</span
+          >:<span id="timerSeconds">00</span>
+        </p>
         <div class="timer-buttons">
           <button class="startBtn">Iniciar</button>
           <button class="pauseBtn disabled">Pausar</button>

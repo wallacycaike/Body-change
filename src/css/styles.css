@@ -93,21 +93,27 @@ body {
   align-items: center;
   gap: 15px;
 }
+.timer .timer-title {
+  font-size: 2.5rem;
+}
 .timer .timer-inputs {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.timer .timer-inputs label {
-  font-size: 2.5rem;
-}
-.timer .timer-inputs input {
-  font-size: 2.5rem;
-  max-width: 180px;
+.timer .timer-inputs select {
+  font-size: 2rem;
+  padding: 5px;
   background: none;
   border: 1px solid #fff;
   border-radius: 7px;
-  padding: 5px 0px 5px 15px;
+}
+.timer .timer-inputs select.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.timer .timer-inputs select option {
+  background-color: rgb(6, 6, 6);
 }
 .timer .timer-time {
   font-size: 7rem;

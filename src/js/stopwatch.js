@@ -1,14 +1,20 @@
-const hoursText = document.querySelector("#hours"),
-  minutesText = document.querySelector("#minutes"),
-  secondsText = document.querySelector("#seconds");
+const hoursText = document.querySelector("#stopwatchHours"),
+  minutesText = document.querySelector("#stopwatchMinutes"),
+  secondsText = document.querySelector("#stopwatchSeconds"),
+  stopwatchStartBtn = document.querySelector(".stopwatch .startBtn"),
+  stopwatchPauseBtn = document.querySelector(".stopwatch .pauseBtn"),
+  stopwatchStopBtn = document.querySelector(".stopwatch .stopBtn");
 
 let hours = 0,
   minutes = 0,
   seconds = 0,
-  timer;
+  stopwatch;
 
-export function start() {
-  timer = setInterval(() => {
+export function startStopwatch() {
+  stopwatchStartBtn.classList.add("disabled");
+  stopwatchPauseBtn.classList.remove("disabled");
+  stopwatchStopBtn.classList.remove("disabled");
+  stopwatch = setInterval(() => {
     if (seconds < 59) {
       seconds++;
       seconds = seconds < 10 ? "0" + seconds : seconds;
@@ -34,12 +40,18 @@ export function start() {
   }, 1000);
 }
 
-export function pause() {
-  clearInterval(timer);
+export function pauseStopwatch() {
+  clearInterval(stopwatch);
+  stopwatchPauseBtn.classList.add("disabled");
+  stopwatchStartBtn.classList.remove("disabled");
 }
 
-export function stop() {
-  clearInterval(timer);
+export function stopStopwatch() {
+  clearInterval(stopwatch);
+
+  stopwatchStartBtn.classList.remove("disabled");
+  stopwatchPauseBtn.classList.add("disabled");
+  stopwatchStopBtn.classList.add("disabled");
 
   hours = 0;
   minutes = 0;

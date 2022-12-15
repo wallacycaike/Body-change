@@ -1,1 +1,24 @@
-@use "./index.scss";
+@use "./accordion.scss";
+@use "./utilities.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  //   background-color: #090909;
+  //   background-color: #141416;
+  background-color: lightgoldenrodyellow;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

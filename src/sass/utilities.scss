@@ -1,34 +1,11 @@
-$bg-color: rgb(6, 6, 6);
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #fff;
-  // color: red;
-}
-
-:root {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: $bg-color;
-  font-family: sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .utilities {
-  display: flex;
+  // display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  border: 1px solid green;
+  border: 1px solid #000;
 }
 
 .stopwatch {
@@ -38,7 +15,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  border-bottom: 1px solid green;
 
   .stopwatch-title {
     font-size: 2.5rem;
@@ -46,7 +22,6 @@ body {
 
   p {
     font-size: 7rem;
-    color: #fff;
   }
 
   .stopwatch-buttons {
@@ -121,17 +96,13 @@ body {
       font-size: 2rem;
       padding: 5px;
       background: none;
-      border: 1px solid #fff;
+      border: 1px solid #000;
       border-radius: 7px;
     }
 
     select.disabled {
       pointer-events: none;
       opacity: 0.5;
-    }
-
-    select option {
-      background-color: rgb(6, 6, 6);
     }
   }
 

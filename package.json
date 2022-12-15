@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wallacycaike/Body-change/issues"
   },
-  "homepage": "https://github.com/wallacycaike/Body-change#readme"
+  "homepage": "https://github.com/wallacycaike/Body-change#readme",
+  "dependencies": {
+    "fullpage.js": "^4.0.15"
+  }
 }

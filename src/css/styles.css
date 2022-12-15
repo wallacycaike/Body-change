@@ -1,30 +1,77 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #fff;
+.container {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 100px 15px;
 }
 
-:root {
-  font-size: 62.5%;
+.accordion .title {
+  font-size: clamp(2.6rem, 5vw, 40px);
+  margin-bottom: 30px;
 }
-
-body {
-  background-color: rgb(6, 6, 6);
-  font-family: sans-serif;
-  min-height: 100vh;
+.accordion .accordion-panel {
+  padding: 7px 21px;
+  margin-bottom: 24px;
+  border: 1px solid #777e91;
+  border-radius: 8px;
+}
+.accordion .accordion-panel input {
+  display: none;
+}
+.accordion .accordion-panel label {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  column-gap: 15px;
+  padding-block: 7px;
+  color: #000;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.accordion .accordion-panel label:hover,
+.accordion .accordion-panel input:checked + label {
+  color: #7effb2;
+}
+.accordion .accordion-panel i {
+  color: #7effb2;
+}
+.accordion .accordion-panel .close {
+  display: none;
+}
+.accordion .accordion-panel input:checked + label .close {
+  display: block;
+}
+.accordion .accordion-panel input:checked + label .open {
+  display: none;
+}
+.accordion .accordion-panel .accordion-body {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.25s ease-in-out;
+}
+.accordion .accordion-panel .accordion-body .accordion-answer {
+  font-size: 1.6rem;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: opacity 0.75s, transform 0.15s;
+}
+.accordion .accordion-panel input:checked ~ .accordion-body {
+  height: max-content;
+}
+.accordion .accordion-panel input:checked ~ .accordion-body .accordion-answer {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .utilities {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid green;
+  border: 1px solid #000;
 }
 
 .stopwatch {
@@ -34,14 +81,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  border-bottom: 1px solid green;
 }
 .stopwatch .stopwatch-title {
   font-size: 2.5rem;
 }
 .stopwatch p {
   font-size: 7rem;
-  color: #fff;
 }
 .stopwatch .stopwatch-buttons {
   display: flex;
@@ -105,15 +150,12 @@ body {
   font-size: 2rem;
   padding: 5px;
   background: none;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 7px;
 }
 .timer .timer-inputs select.disabled {
   pointer-events: none;
   opacity: 0.5;
-}
-.timer .timer-inputs select option {
-  background-color: rgb(6, 6, 6);
 }
 .timer .timer-time {
   font-size: 7rem;
@@ -158,6 +200,26 @@ body {
 .timer .timer-buttons .stopBtn:hover {
   background-color: rgb(255, 0, 0);
   color: rgb(6, 6, 6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

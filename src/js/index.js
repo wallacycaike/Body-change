@@ -35,13 +35,3 @@ timerPauseBtn.addEventListener("click", () => {
 timerStopBtn.addEventListener("click", () => {
   stopTimer();
 });
-
-// ---------- Fullpage ----------
-
-new fullpage("#fullpage", {
-  //options here
-  autoScrolling: true,
-  scrollHorizontally: true,
-  navigation: true,
-  keyboardScrolling: true,
-});

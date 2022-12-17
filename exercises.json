@@ -1,8 +1,8 @@
 [
   {
-    "dayName": "Segunda-feira",
-    "exercises": {
-      "firstExercise": {
+    "dayName": "segunda-feira",
+    "exercises": [
+      {
         "name": "Flexões Tradicionais",
         "firstGrade": {
           "reps": "10",
@@ -17,7 +17,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "secondExercise": {
+      {
         "name": "Flexões Dimante",
         "firstGrade": {
           "reps": "10",
@@ -32,7 +32,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "thirdExercise": {
+      {
         "name": "Tríceps mergulho no banco",
         "firstGrade": {
           "reps": "10",
@@ -47,12 +47,12 @@
           "restTime": "1 minuto e 30 segundos."
         }
       }
-    }
+    ]
   },
   {
-    "dayName": "Quarta-feira",
-    "exercises": {
-      "firstExercise": {
+    "dayName": "quarta-feira",
+    "exercises": [
+      {
         "name": "Agachamento Cossack",
         "firstGrade": {
           "reps": "10",
@@ -63,7 +63,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "secondExercise": {
+      {
         "name": "Agachamento com Pausa",
         "description": "Demorar 4s para executar o movimento, segurar 2s quando descer",
         "firstGrade": {
@@ -75,7 +75,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "thirdExercise": {
+      {
         "name": "Agachamento búlgaro",
         "description": "Demorar 3s para executar o movimento",
         "firstGrade": {
@@ -91,7 +91,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "fourthExercise": {
+      {
         "name": "Agachamento dividido",
         "description": "Demorar entre 2 e 3 segundos para executar o movimento",
         "firstGrade": {
@@ -107,7 +107,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "fifthExercise": {
+      {
         "name": "Agachamento com calcanhar elevado",
         "description": "Demorar 3s para executar o movimento. Após a primeira seríe, realizar o exercício até a falha",
         "firstGrade": {
@@ -119,7 +119,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "sixthExercise": {
+      {
         "name": "Elevação da panturrilha",
         "description": "Demorar 2s para executar o movimento",
         "firstGrade": {
@@ -135,7 +135,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "seventhExercise": {
+      {
         "name": "Agachamentos e Jumping Lunges",
         "firstGrade": {
           "reps": "21",
@@ -150,12 +150,12 @@
           "restTime": "1 minuto"
         }
       }
-    }
+    ]
   },
   {
-    "dayName": "Sexta-feira",
-    "exercises": {
-      "firstExercise": {
+    "dayName": "sexta-feira",
+    "exercises": [
+      {
         "name": "Flexões Tradicionais",
         "firstGrade": {
           "reps": "10",
@@ -166,7 +166,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "secondExercise": {
+      {
         "name": "Flexões Dimante",
         "firstGrade": {
           "reps": "10",
@@ -177,7 +177,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "thirdExercise": {
+      {
         "name": "Flexões com apoio",
         "firstGrade": {
           "reps": "10",
@@ -188,7 +188,7 @@
           "restTime": "1 minuto e 30 segundos."
         }
       },
-      "fourthExercise": {
+      {
         "name": "Flexões abertas",
         "firstGrade": {
           "reps": "10",
@@ -199,6 +199,6 @@
           "restTime": "1 minuto e 30 segundos."
         }
       }
-    }
+    ]
   }
 ]

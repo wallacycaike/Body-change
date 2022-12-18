@@ -4,48 +4,54 @@
     "exercises": [
       {
         "name": "Flexões Tradicionais",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "8",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "thirdGrade": {
-          "reps": "6",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "8",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "6",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Flexões Dimante",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "8",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "thirdGrade": {
-          "reps": "6",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "8",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "6",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Tríceps mergulho no banco",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "8",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "thirdGrade": {
-          "reps": "6",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "8",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "6",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       }
     ]
   },
@@ -54,101 +60,115 @@
     "exercises": [
       {
         "name": "Agachamento Cossack",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Agachamento com Pausa",
         "description": "Demorar 4s para executar o movimento, segurar 2s quando descer",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Agachamento búlgaro",
         "description": "Demorar 3s para executar o movimento",
-        "firstGrade": {
-          "reps": "10 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "10 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "thirdGrade": {
-          "reps": "10 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "10 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "10 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "10 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Agachamento dividido",
         "description": "Demorar entre 2 e 3 segundos para executar o movimento",
-        "firstGrade": {
-          "reps": "12 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "12 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "thirdGrade": {
-          "reps": "12 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "12 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "12 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "12 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Agachamento com calcanhar elevado",
         "description": "Demorar 3s para executar o movimento. Após a primeira seríe, realizar o exercício até a falha",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "Até a falha",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "Até a falha",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Elevação da panturrilha",
         "description": "Demorar 2s para executar o movimento",
-        "firstGrade": {
-          "reps": "15 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "15 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "thirdGrade": {
-          "reps": "15 para cada perna",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "reps": "15 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "15 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "reps": "15 para cada perna",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Agachamentos e Jumping Lunges",
-        "firstGrade": {
-          "reps": "21",
-          "restTime": "1 minuto"
-        },
-        "secondGrade": {
-          "reps": "15",
-          "restTime": "1 minuto"
-        },
-        "thirdGrade": {
-          "reps": "9",
-          "restTime": "1 minuto"
-        }
+        "series": [
+          {
+            "reps": "21",
+            "restTime": "1 minuto"
+          },
+          {
+            "reps": "15",
+            "restTime": "1 minuto"
+          },
+          {
+            "reps": "9",
+            "restTime": "1 minuto"
+          }
+        ]
       }
     ]
   },

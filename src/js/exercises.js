@@ -5,7 +5,7 @@ dayjs.locale("pt-br");
 const dayjsPtbr = window.dayjs_locale_pt_br;
 const todaysDayNumber = dayjs().day();
 const weekDaysPtbr = dayjsPtbr.weekdays;
-const todaysDay = weekDaysPtbr[1];
+const todaysDay = weekDaysPtbr[3];
 let exercisesDays = [];
 
 const dayInfo = document.querySelector(".day-info"),
@@ -22,17 +22,26 @@ exercises.map((day) => {
 
 export function checkExercisesDay() {
   if (exercisesDays.includes(todaysDay)) {
-    showExercises();
+    showExercisesOfDay();
   } else {
     dayInfo.innerText = "Hoje não é dia de exercícios.";
   }
 }
 
-function showExercises() {
+function showExercisesOfDay() {
   dayInfo.innerText = `Hoje é ${todaysDay}.`;
   exercises.map((day) => {
-    for (let i = 0; i < day.exercises.length; i++) {
-      console.log(day.exercises[i].name);
+    if (day.dayName === todaysDay) {
+      day.exercises.map((exercise) => {
+        console.log(exercise.name);
+        console.log(
+          exercise.description ?? "Este exercício não contem descrição."
+        );
+        exercise.series.map((serie) => {
+          console.log(`Repetições: ${serie.reps}`);
+          console.log(`Tempo de descanso: ${serie.restTime}`);
+        });
+      });
     }
   });
 }

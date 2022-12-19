@@ -11,6 +11,12 @@ const timerStartBtn = document.querySelector(".timer .startBtn"),
   timerStopBtn = document.querySelector(".timer .stopBtn");
 
 // ---------- Exercises ----------
+// new fullpage(".fullpage", {
+//   //options here
+//   // autoScrolling: true,
+//   // scrollHorizontally: true,
+//   controlArrowColor: "#000",
+// });
 checkExercisesDay();
 
 // ---------- Stopwatch ----------

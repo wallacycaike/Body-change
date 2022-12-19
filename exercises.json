@@ -6,14 +6,17 @@
         "name": "Flexões Tradicionais",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "10",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "8",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Terceira série",
             "reps": "6",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -23,14 +26,17 @@
         "name": "Flexões Dimante",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "10",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "8",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Terceira série",
             "reps": "6",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -40,14 +46,17 @@
         "name": "Tríceps mergulho no banco",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "10",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "8",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Terceira série",
             "reps": "6",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -62,10 +71,12 @@
         "name": "Agachamento Cossack",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "10",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "10",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -76,10 +87,12 @@
         "description": "Demorar 4s para executar o movimento, segurar 2s quando descer",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "10",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "10",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -90,14 +103,17 @@
         "description": "Demorar 3s para executar o movimento",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "10 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "10 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Terceira série",
             "reps": "10 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -108,14 +124,17 @@
         "description": "Demorar entre 2 e 3 segundos para executar o movimento",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "12 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "12 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Terceira série",
             "reps": "12 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -126,10 +145,12 @@
         "description": "Demorar 3s para executar o movimento. Após a primeira seríe, realizar o exercício até a falha",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "10",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "Até a falha",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -140,14 +161,17 @@
         "description": "Demorar 2s para executar o movimento",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "15 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Segunda série",
             "reps": "15 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           },
           {
+            "name": "Terceira série",
             "reps": "15 para cada perna",
             "restTime": "1 minuto e 30 segundos."
           }
@@ -157,14 +181,17 @@
         "name": "Agachamentos e Jumping Lunges",
         "series": [
           {
+            "name": "Primeira série",
             "reps": "21",
             "restTime": "1 minuto"
           },
           {
+            "name": "Segunda série",
             "reps": "15",
             "restTime": "1 minuto"
           },
           {
+            "name": "Terceira série",
             "reps": "9",
             "restTime": "1 minuto"
           }
@@ -177,47 +204,63 @@
     "exercises": [
       {
         "name": "Flexões Tradicionais",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "8",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "name": "Primeira série",
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "name": "Segunda série",
+            "reps": "8",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Flexões Dimante",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "8",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "name": "Primeira série",
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "name": "Segunda série",
+            "reps": "8",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Flexões com apoio",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "8",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "name": "Primeira série",
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "name": "Segunda série",
+            "reps": "8",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       },
       {
         "name": "Flexões abertas",
-        "firstGrade": {
-          "reps": "10",
-          "restTime": "1 minuto e 30 segundos."
-        },
-        "secondGrade": {
-          "reps": "8",
-          "restTime": "1 minuto e 30 segundos."
-        }
+        "series": [
+          {
+            "name": "Primeira série",
+            "reps": "10",
+            "restTime": "1 minuto e 30 segundos."
+          },
+          {
+            "name": "Segunda série",
+            "reps": "8",
+            "restTime": "1 minuto e 30 segundos."
+          }
+        ]
       }
     ]
   }

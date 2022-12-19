@@ -1,0 +1,47 @@
+.exercises-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  // background-color: #125668;
+  // background-color: #185cdf;
+  background-color: #069ca9;
+
+  .day-info {
+    background-color: #fff;
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+
+  .day-exercises {
+    // border: 1px solid #000;
+    max-width: 1024px;
+
+    .exercise {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      //   background-color: #fff;
+
+      .exercise-name {
+        font-size: 2.5rem;
+        text-decoration: underline;
+        text-align: center;
+      }
+
+      .exercise-series {
+        // border-bottom: 1px solid #000;
+        li {
+          font-size: 2rem;
+        }
+
+        .exercise-series-title {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}

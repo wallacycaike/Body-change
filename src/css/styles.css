@@ -1,3 +1,38 @@
+.exercises-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #069ca9;
+}
+.exercises-area .day-info {
+  background-color: #fff;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+.exercises-area .day-exercises {
+  max-width: 1024px;
+}
+.exercises-area .day-exercises .exercise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.exercises-area .day-exercises .exercise .exercise-name {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.exercises-area .day-exercises .exercise .exercise-series li {
+  font-size: 2rem;
+}
+.exercises-area .day-exercises .exercise .exercise-series .exercise-series-title {
+  font-size: 2.2rem;
+}
+
 .utilities {
   display: none;
   flex-direction: column;
@@ -140,12 +175,21 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 :root {
   font-size: 62.5%;
 }
 
 body {
   font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

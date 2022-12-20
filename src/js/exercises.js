@@ -5,7 +5,7 @@ dayjs.locale("pt-br");
 const dayjsPtbr = window.dayjs_locale_pt_br;
 const todaysDayNumber = dayjs().day();
 const weekDaysPtbr = dayjsPtbr.weekdays;
-const todaysDay = weekDaysPtbr[todaysDayNumber];
+const todaysDay = weekDaysPtbr[3];
 const dateToday = dayjs().format("DD/MM/YYYY");
 let exercisesDays = [];
 

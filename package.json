@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/wallacycaike/Body-change#readme",
   "dependencies": {
-    "dayjs": "^1.11.7",
-    "fullpage.js": "^4.0.15"
+    "dayjs": "^1.11.7"
   }
 }

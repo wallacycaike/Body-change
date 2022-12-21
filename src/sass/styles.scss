@@ -1,5 +1,6 @@
 @use "./exercises.scss";
 @use "./utilities.scss";
+@use "./footer.scss";
 
 * {
   margin: 0;
@@ -19,8 +20,12 @@ body {
   background: linear-gradient(to bottom, #a5465f, #662b3b);
   // background-color: #2e827d;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "exercises exercises utilities"
+    "exercises exercises utilities"
+    "footer footer footer";
+  // column-gap: 30px;
   justify-content: center;
   align-items: center;
 }

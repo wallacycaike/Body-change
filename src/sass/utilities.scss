@@ -1,27 +1,57 @@
 .utilities {
-  // display: flex;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 350px;
 
-  border: 1px solid #000;
-}
+  font-family: "Roboto", sans-serif;
+  color: #f3f4f4;
 
-.stopwatch {
-  padding: 30px;
+  grid-area: utilities;
+  grid-row: 1/1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
 
-  .stopwatch-title {
-    font-size: 2.5rem;
-  }
+  margin: 30px 20px;
+  // padding: 20px;
+
+  position: sticky;
+  top: 25%;
+
+  background-color: #3b3b43;
+  border-radius: 15px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
+}
+
+.utilities.disabled {
+  display: none;
+}
+
+.stopwatch-title {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #2b2b31;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+
+  padding: 12px;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  padding: 20px;
 
   p {
-    font-size: 7rem;
+    font-size: 6.6rem;
   }
 
   .stopwatch-buttons {
@@ -31,7 +61,7 @@
 
     button {
       cursor: pointer;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       border-radius: 5px;
       background: none;
       padding: 5px 10px;
@@ -44,48 +74,55 @@
     }
 
     .startBtn {
-      border: 1px solid rgb(0, 128, 0);
-      color: rgb(0, 128, 0);
+      border: 2px solid #879570;
+      color: #f3f4f4;
 
       &:hover {
-        background-color: rgb(0, 128, 0);
-        color: rgb(6, 6, 6);
+        background-color: #879570;
       }
     }
 
     .pauseBtn {
-      border: 1px solid rgb(255, 255, 0);
-      color: rgb(255, 255, 0);
+      border: 2px solid #879570;
+      color: #f3f4f4;
 
       &:hover {
-        background-color: rgb(255, 255, 0);
-        color: rgb(6, 6, 6);
+        background-color: #879570;
       }
     }
 
     .stopBtn {
-      border: 1px solid rgb(255, 0, 0);
-      color: rgb(255, 0, 0);
+      border: 2px solid #879570;
+      color: #f3f4f4;
 
       &:hover {
-        background-color: rgb(255, 0, 0);
-        color: rgb(6, 6, 6);
+        background-color: #879570;
       }
     }
   }
 }
 
+.timer-title {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #2b2b31;
+  // border-radius: 15px 15px 0 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+
+  padding: 12px;
+}
+
 .timer {
-  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
 
-  .timer-title {
-    font-size: 2.5rem;
-  }
+  padding: 20px;
 
   .timer-inputs {
     display: flex;
@@ -93,11 +130,17 @@
     gap: 15px;
 
     select {
+      cursor: pointer;
       font-size: 2rem;
+      color: #f3f4f4;
       padding: 5px;
       background: none;
-      border: 1px solid #000;
+      border: 1px solid #f3f4f4;
       border-radius: 7px;
+
+      option {
+        background-color: #3b3b43;
+      }
     }
 
     select.disabled {
@@ -107,8 +150,7 @@
   }
 
   .timer-time {
-    font-size: 7rem;
-    // transition: ease-in 0.25s;
+    font-size: 6.6rem;
   }
 
   .timer-buttons {
@@ -118,7 +160,7 @@
 
     button {
       cursor: pointer;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       border-radius: 5px;
       background: none;
       padding: 5px 10px;
@@ -131,33 +173,36 @@
     }
 
     .startBtn {
-      border: 1px solid rgb(0, 128, 0);
-      color: rgb(0, 128, 0);
+      border: 2px solid #879570;
+      color: #f3f4f4;
 
       &:hover {
-        background-color: rgb(0, 128, 0);
-        color: rgb(6, 6, 6);
+        background-color: #879570;
       }
     }
 
     .pauseBtn {
-      border: 1px solid rgb(255, 255, 0);
-      color: rgb(255, 255, 0);
+      border: 2px solid #879570;
+      color: #f3f4f4;
 
       &:hover {
-        background-color: rgb(255, 255, 0);
-        color: rgb(6, 6, 6);
+        background-color: #879570;
       }
     }
 
     .stopBtn {
-      border: 1px solid rgb(255, 0, 0);
-      color: rgb(255, 0, 0);
+      border: 2px solid #879570;
+      color: #f3f4f4;
 
       &:hover {
-        background-color: rgb(255, 0, 0);
-        color: rgb(6, 6, 6);
+        background-color: #879570;
       }
     }
+  }
+}
+
+@media (max-width: 968px) {
+  .utilities {
+    display: none;
   }
 }

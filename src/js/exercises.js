@@ -5,12 +5,13 @@ dayjs.locale("pt-br");
 const dayjsPtbr = window.dayjs_locale_pt_br;
 const todaysDayNumber = dayjs().day();
 const weekDaysPtbr = dayjsPtbr.weekdays;
-const todaysDay = weekDaysPtbr[3];
+const todaysDay = weekDaysPtbr[todaysDayNumber];
 const dateToday = dayjs().format("DD/MM/YYYY");
 let exercisesDays = [];
 
 const dayInfo = document.querySelector(".day-info"),
-  exercisesInfo = document.querySelector(".day-exercises");
+  exercisesInfo = document.querySelector(".day-exercises"),
+  utilities = document.querySelector(".utilities");
 
 exercises.map((day) => {
   exercisesDays.push(day.dayName);
@@ -20,7 +21,7 @@ export function checkExercisesDay() {
   if (exercisesDays.includes(todaysDay)) {
     showExercisesOfDay();
   } else {
-    dayInfo.textContent = `Hoje é ${todaysDay}, não há exercícios para hoje, descanse.`;
+    showRestMensage();
   }
 }
 
@@ -73,4 +74,33 @@ function showExercisesOfDay() {
       });
     }
   });
+}
+
+function showRestMensage() {
+  utilities.classList.add("disabled");
+  dayInfo.textContent = `Hoje é ${todaysDay}, ${dateToday}.`;
+  let h3 = document.createElement("h3");
+  h3.classList.add("exercise-rest-title");
+  h3.textContent = "Dia de descansar";
+
+  let p1 = document.createElement("p");
+  p1.classList.add("exercise-rest-message");
+  p1.textContent = `Descansar é algo fundamental para a hipertrofia muscular. Durante um treinamento intenso, o músculo trabalhado sofre uma enorme sobrecarga e portanto acabam por causar micro lesões nas fibras musculares (são elas que causam a dor depois de algumas horas do fim do exercício).`;
+
+  let p2 = document.createElement("p");
+  p2.classList.add("exercise-rest-message");
+  p2.textContent = `Para regenerar essas micro lesões e aumentar a resistência aos estímulos (por isso não se fica muito tempo com a mesma série, pois o corpo se adapta a estes estímulos), o corpo precisa lançar mão dos processos de supercompensação.`;
+
+  let p3 = document.createElement("p");
+  p3.classList.add("exercise-rest-message");
+  p3.textContent = `Para que ocorra esta regeneração o corpo deve disponibilizar de nutrientes (glicose, aminoácidos, vitaminas e minerais) para a reconstrução muscular. Mas esta reconstrução só ocorre durante o descanso, e durante o sono.`;
+
+  let div = document.createElement("div");
+  div.classList.add("exercise-rest");
+  div.appendChild(h3);
+  div.appendChild(p1);
+  div.appendChild(p2);
+  div.appendChild(p3);
+
+  exercisesInfo.appendChild(div);
 }

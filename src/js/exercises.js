@@ -1,7 +1,6 @@
 const exercises = await fetch("../../exercises.json").then((response) =>
   response.json()
 );
-dayjs.locale("pt-br");
 const dayjsPtbr = window.dayjs_locale_pt_br;
 const todaysDayNumber = dayjs().day();
 const weekDaysPtbr = dayjsPtbr.weekdays;
